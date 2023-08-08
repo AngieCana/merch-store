@@ -1,15 +1,15 @@
 import React from 'react'
 import {PRODUCTS} from "./shop-now/Product-List"
-import {Product} from "./product"
+import CreateProduct from './shop-now/create-product'
 
 const Main = () => {
   return (
-    <div>Store Main Page
+    <div>Stores the Main Page
       <div>
         <h1>Spiteful's Store</h1>
       </div>
       <div className='products'>{PRODUCTS.map((product) => {
-        <Product />
+        <CreateProduct />
       })}
       </div>
     </div>
